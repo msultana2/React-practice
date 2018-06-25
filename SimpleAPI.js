@@ -13,6 +13,7 @@ class SimpleAPI extends Component {
             term: event.target.value
         });
     }
+    
     handleSubmit = (event) => {
         event.preventDefault();
         const api_key = 'dc6zaTOxFJmzC';
@@ -28,6 +29,7 @@ class SimpleAPI extends Component {
             })
             .catch(e => console.log('error', e));
     }
+    
     render() {
         return (
             <div>
